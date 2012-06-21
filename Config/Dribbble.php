@@ -12,14 +12,6 @@ $config['Apis']['Dribbble']['hosts'] = array(
 );
 //
 // http://dribbble.com/api
-$config['Apis']['Dribbble']['oauth'] = array(
-	'version' => '1.0',
-	'scheme' => 'https',
-	'login' => 'authenticate', //Exactly like authorize, just auto-redirects
-	'request' => 'request_token',
-	'authorize' => 'authorize',
-	'access' => 'access_token',
-);
 $config['Apis']['Dribbble']['read'] = array(
 	// field
 	'people' => array(
@@ -44,13 +36,4 @@ $config['Apis']['Dribbble']['read'] = array(
 			),
 		),
 	),
-);
-
-$config['Apis']['Dribbble']['write'] = array(
-);
-
-$config['Apis']['Dribbble']['update'] = array(
-);
-
-$config['Apis']['Dribbble']['delete'] = array(
 );
