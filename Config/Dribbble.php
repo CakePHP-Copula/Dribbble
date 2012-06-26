@@ -14,19 +14,27 @@ $config['Apis']['Dribbble']['hosts'] = array(
 // http://dribbble.com/api
 $config['Apis']['Dribbble']['read'] = array(
 	// field
-	'people' => array(
-		'Dribbble.people.findByEmail' => array(
-			'email',
+	'shots' => array(
+		'/shots/:id' => array(
+			'id',
 		),
-		// api url
-		'Dribbble.people.getInfo' => array( // See 'test' section below for lighter response
-			// optional conditions the api call can take
-			'optional' => array(
-				'user_id',
-			),
+		'/shots/:id/rebounds' => array( 
+			'id',
+		),
+		'/shots/:list' => array(
+			'id',
+		),
+		'/players/:id/shots' => array(
+			'id',
+		),
+		'/players/:id/shots/following' => array(
+			'id',
+		),
+		'/players/:id/shots/likes' => array(
+			'id',
 		),
 	),
-	'albums' => array(
+	'players' => array(
 		'Dribbble.albums.getAll' => array(
 			'optional' => array(
 				'user_id',
